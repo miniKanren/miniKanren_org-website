@@ -58,9 +58,13 @@ The MIT Press, Cambridge, MA, 2005<br /><br />
 <a name="implementations"></a>
 <h2>Implementations</h2>
 
+
 <h3>Scheme</h3>
 
-<a href="https://github.com/miniKanren/miniKanren">miniKanren</a><br /><br />
+<a href="https://github.com/webyrd/miniKanren-with-symbolic-constraints">miniKanren-with-symbolic-constraints</a><br />
+miniKanren with extensions for symbolic constraint solving.  Includes compatibility files for Racket and various Scheme implementations.<br /><br />
+
+<!-- <a href="https://github.com/miniKanren/miniKanren">miniKanren</a><br /><br /> -->
 
 <a href="https://github.com/jasonhemann/microKanren">microKanren</a><br />
 A minimal miniKanren implementation, as described in the <a href="#microKanrenPaper">2013 Scheme Workshop paper</a>.<br /><br />
@@ -68,11 +72,15 @@ A minimal miniKanren implementation, as described in the <a href="#microKanrenPa
 <a href="https://github.com/webyrd/alphaKanren">alphaKanren</a><br />
 miniKanren extended with nominal logic programming, as described in the <a href="#alphaKanrenPaper">2007 Scheme Workshop paper</a>.<br /><br />
 
+<a href="https://github.com/orchid-hybrid/microKanren-sagittarius">microKanren-sagittarius</a><br />
+miniKanren implementation for R7RS sagittarius scheme 0.6.0 based on (microKanren) with the <code>=/=</code> operation added.<br /><br />
+
 <a href="https://github.com/cgswords/rkanren">rKanren</a><br />
 miniKanren with guided search, as described in the <a href="#rKanrenPaper">2013 Scheme Workshop paper</a>.<br /><br />
 
-<a href="https://github.com/kourzanov/bkanren">bkanren</a><br />
-miniKanren with constraint extensions that runs under <a href="http://www-sop.inria.fr/mimosa/fp/Bigloo/">Bigloo Scheme</a>.<br /><br />
+<a href="https://github.com/donaldsonjw/bkanren">bkanren</a><br />
+miniKanren with constraint extensions that runs under <a href="http://www-sop.inria.fr/mimosa/fp/Bigloo/">Bigloo Scheme</a>.<br />
+Fork: <a href="https://github.com/kourzanov/bkanren">bkanren</a><br /><br />
 
 <!--
 <a href="https://github.com/calvis/cKanren">cKanren</a><br />
@@ -89,19 +97,49 @@ Stochastic Logic Programs (SLP) style probabilistic logic programming in miniKan
 
 <h3>Racket</h3>
 
+<a href="https://github.com/webyrd/miniKanren-with-symbolic-constraints">miniKanren-with-symbolic-constraints</a><br />
+miniKanren with extensions for symbolic constraint solving.  Includes compatibility files for Racket and various Scheme implementations.<br /><br />
+
 <a href="https://github.com/calvis/cKanren">cKanren</a><br />
 miniKanren extended with Constraint Logic Programming (CLP); an improved version of the
 system described in the <a href="#cKanrenPaper">2011 Scheme Workshop paper</a>.<br /><br />
 
-<a href="https://github.com/miniKanren/Racket-miniKanren">vanilla miniKanren Racket port</a>
+<a href="https://github.com/miniKanren/Racket-miniKanren">Racket-miniKanren</a><br />
+vanilla miniKanren Racket port<br /><br />
+
+<a href="https://github.com/niitsuma/Racket-miniKanren/tree/recursive">recursive miniKanren</a><br />
+recursive miniKanren implementation in Racket.
 
 
 <h3>Clojure</h3>
 
-<a href="https://github.com/clojure/core.logic">core.logic</a><br /><br />
-<a href="https://github.com/threatgrid/pldb">pldb</a> (persistent logic database for clojure core.logic)<br /><br />
-(<a href="https://rawgithub.com/dedeibel/clojure-core-logic-cheatsheets/master/out/cheatsheet-use-title-attribute-no-cdocs-summary.html">core.logic cheatsheet</a>, courtesy of <a href="http://myminutes.wordpress.com/2013/07/17/clojure-core-logic-cheatsheets/">Benjamin Peter</a>)<br /><br />
-<a href="https://github.com/halgari/async-mu-kanren">async-mu-kanren</a>
+<a href="https://github.com/clojure/core.logic">core.logic</a><br />
+(<a href="https://rawgithub.com/dedeibel/clojure-core-logic-cheatsheets/master/out/cheatsheet-use-title-attribute-no-cdocs-summary.html">core.logic cheatsheet</a>, courtesy of <a href="http://myminutes.wordpress.com/2013/07/17/clojure-core-logic-cheatsheets/">Benjamin Peter</a>)<br />
+
+<a href="https://github.com/mullr/micrologic"></a><br />
+A literate Clojure implementation of microKanren.<br />
+<a href="http://mullr.github.io/micrologic/literate.html">Annotated source code.</a><br /><br />
+
+<a href="https://github.com/halgari/async-mu-kanren">async-mu-kanren</a><br />
+Proof-of-concept implementation of muKanren using CSP (core.async)<br />
+
+
+<br /><br />
+
+
+<h3>Assorted Languages</h3>
+
+<a href="https://github.com/bodil/microkanrens">Implementations of microKanren in assorted languages</a>
+
+
+<h3>C#</h3>
+
+<a href="https://github.com/wallymathieu/csharp_ukanren">csharp_ukanren</a>
+
+
+<h3>CoffeeScript</h3>
+
+<a href="https://github.com/fogus/friebyrd">Friebyrd</a>
 
 
 <h3>Common Lisp</h3>
@@ -109,6 +147,46 @@ system described in the <a href="#cKanrenPaper">2011 Scheme Workshop paper</a>.<
 <a href="http://common-lisp.net/projects/cl-kanren-trs/">cl-kanren-trs</a><br /><br />
 
 <a href="https://github.com/deliciousrobots/kanren-fset">Kanren-Fset</a> (Fset collection library support for cl-kanren-trs)
+
+
+<h3>Dylan</h3>
+
+<a href="https://github.com/tca/miniKanren-Dylan">miniKanren-Dylan</a>
+
+
+<h3>Elixir</h3>
+
+<a href="https://github.com/lyons/ExKanren">ExKanren</a>
+
+
+<h3>Erlang</h3>
+
+<a href="https://github.com/zkessin/erlKanren">erlKanren</a><br /><br />
+
+<a href="https://github.com/bodil/lolkanren/blob/master/kanren.erl">lolkanren_erlang</a><br /><br />
+
+<a href="https://github.com/voila/mukanren">mukanren</a>
+
+
+<h3>Extempore</h3>
+
+<a href="https://github.com/jasonhemann/microKanren-extempore">mini-over-micro-extempore</a>
+
+
+<h3>F#</h3>
+
+<a href="https://github.com/kurtschelfthout/MiniKanren">MiniKanren</a><br />
+An attempted implementation of MiniKanren in F#.
+
+
+<h3>Go</h3>
+
+<a href="https://github.com/hiredman/gologic">gologic</a>
+
+
+<h3>Groovy</h3>
+
+<a href="https://github.com/timyates/groovy-logic">groovy-logic</a>
 
 
 <h3>Haskell</h3>
@@ -124,11 +202,75 @@ system described in the <a href="#cKanrenPaper">2011 Scheme Workshop paper</a>.<
 <a href="https://bitbucket.org/jozefg/ds-kanren">DS-Kanren</a>
 
 
-<h3>Scala</h3>
+<h3>Java</h3>
 
-<a href="https://github.com/namin/scalogno">scalogno</a><br /><br />
+<a href="https://github.com/nd/mk.java">mk.java</a><br />
+microKanren in Java.
 
-<a href="https://github.com/hircus/minikanren-scala">minikanren-scala</a>
+
+<h3>JavaScript</h3>
+
+<a href="http://tca.github.io/veneer/editor.html">veneer</a><br />
+Browser based miniKanren editor and REPL, with constraints.<br />
+<a href="https://github.com/tca/veneer">GitHub repo</a><br /><br />
+
+<a href="https://github.com/asolove/microScopeKanren">microScopeKanren</a><br />
+A JavaScript implementation of microKanren with a focus on inspecting programs as they run.<br />
+<a href="http://www.adamsolove.com/microScopeKanren/">Example, vizualizing <code>appendo</code></a><br /><br />
+
+<a href="https://github.com/joshcox/microJSKanren">microJSKanren</a><br /><br />
+
+<a href="https://github.com/bodil/lolkanren">lolkanren</a><br /><br />
+
+<a href="https://github.com/stanistan/jolic">jolic</a><br /><br />
+
+<a href="https://github.com/zaach/ukanren.js">uKanren</a><br /><br />
+
+<a href="https://github.com/willkurt/microKanren.js">microKanren</a>
+
+
+<h3>Lua</h3>
+
+<a href="https://github.com/silentbicycle/lua-ukanren">lua-ukanren</a>
+
+
+<h3>Mímir experimental rules engine</h3>
+
+<a href="https://github.com/hraberg/mimir/blob/master/src/mimir/mk.clj">mímirKanren</a>
+
+
+<h3>miniKanren</h3>
+
+<a href="https://github.com/jasonhemann/micro-in-mini">micro-in-mini</a>
+
+
+<h3>ML</h3>
+
+<a href="https://github.com/chrisamaphone/ml-mukanren">ml-mukanren</a>
+
+
+<h3>.NET</h3>
+
+<a href="https://github.com/naasking/uKanren.NET">uKanren.NET</a><br />
+A native implementation of the MicroKanren logic programming DSL for .NET.
+
+
+<h3>OCaml</h3>
+
+<a href="https://github.com/lightyang/minikanren-ocaml">minikanren-ocaml</a>
+
+
+<h3>PHP</h3>
+
+<a href="https://github.com/igorw/reasoned-php">reasoned-php</a><br /><br />
+
+<a href="https://github.com/mudge/php-microkanren">php-microKanren</a>
+
+
+<h3>Prolog</h3>
+
+<a href="https://github.com/mndrix/microkanren-prolog">microkanren-prolog</a><br />
+A Prolog implementation of microKanren.
 
 
 <h3>Python</h3>
@@ -146,75 +288,25 @@ system described in the <a href="#cKanrenPaper">2011 Scheme Workshop paper</a>.<
 
 <a href="https://github.com/spariev/mini_kanren">mini_kanren</a><br /><br />
 
-<a href="https://github.com/jsl/ruby_ukanren">micro_kanren</a>
+<a href="https://github.com/jsl/ruby_ukanren">micro_kanren</a><br />
+
+<a href="http://scottdial.com/projects/minikanren.rb">MiniKanren</a>
 
 
-<h3>Lua</h3>
+<h3>Scala</h3>
 
-<a href="https://github.com/silentbicycle/lua-ukanren">lua-ukanren</a>
+<a href="https://github.com/namin/scalogno">scalogno</a><br /><br />
 
-
-<h3>C#</h3>
-
-<a href="https://github.com/wallymathieu/csharp_ukanren">csharp_ukanren</a>
+<a href="https://github.com/hircus/minikanren-scala">minikanren-scala</a>
 
 
-<h3>JavaScript</h3>
+<h3>Smalltalk</h3>
 
-<a href="https://github.com/joshcox/microJSKanren">microJSKanren</a><br /><br />
-
-<a href="https://github.com/bodil/lolkanren">lolkanren</a><br /><br />
-
-<a href="https://github.com/stanistan/jolic">jolic</a><br /><br />
-
-<a href="https://github.com/zaach/ukanren.js">uKanren</a><br /><br />
-
-<a href="https://github.com/willkurt/microKanren.js">microKanren</a>
+<a href="https://github.com/adolfopa/microkanren-pharo">microkanren-pharo</a><br />
+<a href="http://smalltalkhub.com/#!/~adolfopa/MicroKanren">Smalltalk Hub link to microkanren-pharo</a>
 
 
-<h3>CoffeeScript</h3>
-
-<a href="https://github.com/fogus/friebyrd">Friebyrd</a>
-
-
-<h3>PHP</h3>
-
-<a href="https://github.com/igorw/reasoned-php">reasoned-php</a><br /><br />
-
-<a href="https://github.com/mudge/php-microkanren">php-microKanren</a>
-
-
-<h3>Erlang</h3>
-
-<a href="https://github.com/zkessin/erlKanren">erlKanren</a><br /><br />
-
-<a href="https://github.com/bodil/lolkanren/blob/master/kanren.erl">lolkanren_erlang</a><br /><br />
-
-<a href="https://github.com/voila/mukanren">mukanren</a>
-
-
-<h3>OCaml</h3>
-
-<a href="https://github.com/lightyang/minikanren-ocaml">minikanren-ocaml</a>
-
-
-<h3>Groovy</h3>
-
-<a href="https://github.com/timyates/groovy-logic">groovy-logic</a>
-
-
-<h3>Mímir experimental rules engine</h3>
-
-<a href="https://github.com/hraberg/mimir/blob/master/src/mimir/mk.clj">mímirKanren</a>
-
-
-<h3>Elixir</h3>
-
-<a href="https://github.com/lyons/ExKanren">ExKanren</a>
-
-<h3>Go</h3>
-
-<a href="https://github.com/hiredman/gologic">gologic</a>
+<br /><br />
 
 
 <a name="projects"></a>
