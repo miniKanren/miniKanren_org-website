@@ -1,0 +1,129 @@
+\documentclass[oneside]{book}
+\usepackage{pdfpages}
+\usepackage{fullpage}
+\usepackage{fancyhdr}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage{baskervald}
+\usepackage{geometry}
+\usepackage{multicol}
+\usepackage{amsmath}
+\usepackage{lmodern}     % set math font to Latin modern math
+\usepackage[T1]{fontenc}
+\definecolor{neured}{cmyk}{0.0,1.0,0.9,0.05}
+\definecolor{neugrey}{cmyk}{0.0,0.13,0.30,0.76}
+\fancyhead{}
+\lfoot{\thepage}
+\cfoot{}
+\rfoot{2020 miniKanren and Relational Programming Workshop}
+\renewcommand{\headrulewidth}{0.0pt}
+\date{January 6th, 2021}
+\author{Jason Hemann \and Dmitri Boulytchev}
+\begin{document}
+\frontmatter
+\begin{titlepage}
+\newgeometry{textheight=9.5in,textwidth=506pt}
+\thispagestyle{empty}
+\hspace{-15pt}%
+\colorbox{neured}{%
+\begin{minipage}[t][130pt][t]{0.99\textwidth}%
+\hspace{30pt}%
+\begin{minipage}[t][130pt][t]{0.16\textwidth}%
+\vspace{\fill}%
+\includegraphics[height=72pt]{NEU_seal}%
+\vspace{\fill}%
+\end{minipage}%
+\begin{minipage}[t][130pt][t]{0.70\textwidth}%
+\vspace{\fill}%
+\color{white}{\Huge{\textbf{Northeastern University}}}\\
+\color{white}{\large{\textbf{Khoury College of Computer Sciences}}}%
+\vspace{30pt}%
+\end{minipage}%
+\end{minipage}}
+\vspace{30pt}
+\begin{flushright}
+\Huge{Proceedings of the 2020 miniKanren and\\ Relational Programming Workshop}\\
+\vspace{20pt}
+\large{Online---August 27th, 2020}\\
+\vspace{20pt}
+\large{Edited by Jason Hemann, Northeastern University\\ and Dmitri Boulytchev, St. Petersburg State University}
+\end{flushright}
+\vspace{\fill}
+\colorbox{neugrey}{%
+\begin{minipage}[t][24pt][t]{0.99\textwidth}
+\hspace{30pt}
+\end{minipage}}
+\end{titlepage}
+\restoregeometry
+\newgeometry{textheight=8.5in,textwidth=490pt}
+\chapter*{Preface}
+This report aggregates the papers presented at the second miniKanren
+and Relational Programming Workshop, held online on August 27th, 2020
+co-located with the 25th International Conference on
+Functional Programming.
+
+\vspace{5pt}
+\noindent
+The miniKanren and Relational Programming Workshop solicits papers and
+talks on the design, implementation, and application of
+miniKanren-like languages. A major goal of the workshop is to bring
+together researchers, implementers, and users from the miniKanren
+community, and to share expertise and techniques for relational
+programming. Another goal for the workshop is to push the state of the
+art of relational programming.
+
+\vspace{5pt}
+\noindent
+Twelve papers were submitted to the workshop, and each paper was
+reviewed by at least three members of the program committee.  After
+deliberation, eleven of those papers were accepted to the workshop.
+
+\vspace{5pt}
+\noindent
+In addition to those eleven papers presented
+\begin{itemize}
+\item Eelco Visser (Delft University of Technology) gave an invited
+  morning keynote speech, \textit{Executing Declarative Language
+  Definitions}, demonstrating by example declarative language
+  definition in the Spoofax language workbench, a programming
+  environment for the development of programming languages.
+\item Matthew Might (University of Alabama at Birmingham and Harvard
+  Medical School) gave an invited afternoon keynote speech, \textit{The Pill
+  is in The Proof: Saving Lives with Logic}, exploring the use of
+  miniKanren for precision medicine as embodied by the
+  drug-repurposing tool mediKanren.
+\end{itemize}
+
+\vspace{5pt}
+\noindent
+Special thanks to Eelco Visser and Matthew Might for their
+presentations and the program committee for reviewing and deliberating
+on the submitted papers.
+
+\section*{Program Committee}
+\noindent
+Dmitri Boulytchev, St. Petersburg State University, (PC Chair) \\ 
+Adam Foltzer, Fastly \\ 
+Jason Hemann, Northeastern University (General Chair) \\ 
+Ekaterina Komendantskaya, Heriot-Watt University \\ 
+Jan Midtgaard, University of Southern Denmark \\ 
+Joseph P. Near, University of Vermont \\ 
+Gregory Rosenblatt, University of Alabama at Birmingham \\ 
+Ilya Sergey, Yale-NUS College and National University of Singapore \\ 
+Kanae Tsushima, National Institute of Informatics \\ 
+\tableofcontents
+\mainmatter
+\newgeometry{textheight=9.5in,textwidth=506pt}
+\includepdf[pages={{},1-last},pagecommand={\thispagestyle{fancy}},addtotoc={1,chapter,1,{On Fair Relational Conjunction},lozov}]{Lozov}
+\includepdf[pages={{},1-last},pagecommand={\thispagestyle{fancy}},addtotoc={1,chapter,1,{An Empirical Study of Partial Deduction for miniKanren},verbitskaia}]{Verbitskaia}
+\includepdf[pages={{},1-last},pagecommand={\thispagestyle{fancy}},addtotoc={1,chapter,1,{MicroKanren in J: an Embedding of the Relational Paradigm in an Array Language with Rank-Polymorphic Unification},schorer}]{Schorer}
+\includepdf[pages={{},1-last},pagecommand={\thispagestyle{fancy}},addtotoc={1,chapter,1,{$\lambda$Kanren: Higher-order Logic Programming with Shallow Embedding},ma}]{Ma}
+\includepdf[pages={{},1-last},pagecommand={\thispagestyle{fancy}},addtotoc={1,chapter,1,{Kanren Light: A Dynamically Semi-Certified Interactive Logic Programming System},maggesi}]{Maggesi}
+\includepdf[pages={{},1-last},pagecommand={\thispagestyle{fancy}},addtotoc={1,chapter,1,{Certified Semantics for Disequality},rozplokhas}]{Rozplokhas}
+\includepdf[pages={{},1-last},pagecommand={\thispagestyle{fancy}},addtotoc={1,chapter,1,{mediKanren: A System for Bio-medical Reasoning},byrd}]{Byrd}
+\includepdf[pages={{},1-last},pagecommand={\thispagestyle{fancy}},addtotoc={1,chapter,1,{Relational Synthesis for Pattern Matching},kosarev}]{Kosarev}
+\includepdf[pages={{},1-last},pagecommand={\thispagestyle{fancy}},addtotoc={1,chapter,1,{Some Novel miniKanren Synthesis Tasks},hemann}]{Hemann}
+\includepdf[pages={{},1-last},pagecommand={\thispagestyle{fancy}},addtotoc={1,chapter,1,{A Relational Interpreter for Synthesizing JavaScript},chirkov}]{Chirkov}
+\includepdf[pages={{},1-last},pagecommand={\thispagestyle{fancy}},addtotoc={1,chapter,1,{dxo: A System for Relational Algebra and Differentiation},steele}]{Steele}
+\end{document}
