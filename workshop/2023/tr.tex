@@ -10,6 +10,8 @@
 \usepackage{baskervald}
 \usepackage{geometry}
 \usepackage{multicol}
+\usepackage{titling}
+\usepackage{parskip}
 \fancyhead{}
 \fancyfoot[LE,RO]{\thepage}
 \cfoot{}
@@ -17,10 +19,57 @@
 \renewcommand{\headrulewidth}{0.0pt}
 \date{September 8, 2023}
 \author{Nada Amin \and William E. Byrd}
+
+
 \begin{document}
 \frontmatter
 \setcounter{page}{3}  % cover page to be added by TR editor
 \newgeometry{textheight=8.5in,hmargin=20mm}
+
+\title{\vspace{-3cm}Proceedings of the 2023 miniKanren and Relational Programming Workshop}
+\author{Nada Amin \\ and \\ William E. Byrd}
+\date{}
+
+\begin{titlepage}
+  \centering
+  \vspace*{4cm}
+  
+  {\LARGE \thetitle}
+  
+  \vspace{1.5cm}
+  
+  {\large \theauthor}
+  
+  \vspace{1.5cm}
+  
+  %TR-02-23
+  
+  \vspace{1cm}
+  
+  % Uncomment the next line and replace "logo.png" with the path to your logo
+  % \includegraphics[width=0.3\textwidth]{logo.png}
+  
+  \vspace{12cm}
+  
+%%   {\LARGE Proceedings of the 2023 miniKanren and Relational Programming Workshop}
+  
+%%   \vspace{1cm}
+  
+%%   {\large William E. Byrd \\ and \\ Nada Amin}
+  
+%%   \vspace{1cm}
+  
+%%   TR-02-23
+  
+%%   \vspace{1cm}
+
+  {\large
+    Harvard University \\
+    Cambridge, Massachusetts}
+  
+  \vfill
+\end{titlepage}
+
 \chapter*{Preface}
 This report aggregates the papers presented at the fifth miniKanren
 and Relational Programming Workshop, hosted on September 8, 2023 in
@@ -49,11 +98,11 @@ In addition to the four full papers presented
 Thanks to all presenters, participants, and members of the
 program committee.
 
-\ \\
+\vspace{5pt}
 
 \ \ \ \ \ \ \ Nada Amin \& William E. Byrd
 
-\ \\
+\vspace{5pt}
 
 \section*{Program Committee}
 \noindent
@@ -77,8 +126,8 @@ Ekaterina Verbitskaia, JetBrains, Serbia\\
 
 \includepdf[noautoscale,scale=1.07,pages=-,pagecommand={\thispagestyle{fancy}},addtotoc={1,chapter,2,{Semi-Automated Direction-Driven Functional Conversion by Verbitskaia, Engel \& Berezun},p2}]{minikanren23-final2}
 
-\ \\
-\pagebreak
+%\ \\
+%\pagebreak
 
 \includepdf[noautoscale,scale=1.07,pages=-,pagecommand={\thispagestyle{fancy}},addtotoc={1,chapter,3,{Stable Model Semantics Extension of miniKanren by Guo, Smith \& Bansal},p3}]{minikanren23-final3}
 
@@ -87,7 +136,7 @@ Ekaterina Verbitskaia, JetBrains, Serbia\\
 
 \includepdf[noautoscale,scale=1.07,pages=-,pagecommand={\thispagestyle{fancy}},addtotoc={1,chapter,4,{klogic: miniKanren in Kotlin by Kamenev, Kosarev, Ivanov, Fokin \& Boulytchev},p4}]{minikanren23-final4}
 
-\ \\
-\pagebreak
+%\ \\
+%\pagebreak
 
 \end{document}
